@@ -11,3 +11,21 @@ If you use the code, please cite the following paper:
 ```
 @article{Dandi_Bharadhwaj_Kumar_Rai_2021, title={Generalized Adversarially Learned Inference}, volume={35}, url={https://ojs.aaai.org/index.php/AAAI/article/view/16883}, number={8}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Dandi, Yatin and Bharadhwaj, Homanga and Kumar, Abhishek and Rai, Piyush}, year={2021}, month={May}, pages={7185-7192} }
 ```
+
+## Instructions
+
+For training:
+
+with modelname_train_dataset.py and the corresponding model.py in the same directory, run:
+
+```
+python3 modelname_train_dataset.py --dataset celeba/svhn --dataroot path_to_dataset --save_model_dir path_to_checkpoint_directory --save_image_dir path_to_gnerated_images_directory
+```
+
+For evaluation:
+
+test_recon_svhn.py and test_recon_celeba.py are used for calculating pixel and feature MSE for svhn and celeba datasets respectively whereas  test_recon_celeba_inpaint.py is used for the quantitative evaluation of the image-inpainting task. The command for evaluation scripts is as follows:
+
+```
+python3 test_recon_dataset.py --dataroot path_to_dataset --dataset celeba --epochlist (epochs of each of the models) --dirlist (list of paths to checkpoint directories) --objlist (list of model names)  --stochlist (stochasticity of encoder for each model separated by space, True for all our models) --save_result_dir (path to directory for saving reconstructed/generated images)  --tanhlist (Use of tanh non-linearity in each model separated by space, True for all our models) --checkpoint path_to_pretrained_models
+```
