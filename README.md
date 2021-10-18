@@ -8,5 +8,6 @@ Allowing effective inference of latent vectors while training GANs can greatly i
 ## References
 If you use the code, please cite the following paper:
 
-```@article{Dandi_Bharadhwaj_Kumar_Rai_2021, title={Generalized Adversarially Learned Inference}, volume={35}, url={https://ojs.aaai.org/index.php/AAAI/article/view/16883}, number={8}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Dandi, Yatin and Bharadhwaj, Homanga and Kumar, Abhishek and Rai, Piyush}, year={2021}, month={May}, pages={7185-7192} }
+```
+@article{Dandi_Bharadhwaj_Kumar_Rai_2021, title={Generalized Adversarially Learned Inference}, volume={35}, url={https://ojs.aaai.org/index.php/AAAI/article/view/16883}, number={8}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Dandi, Yatin and Bharadhwaj, Homanga and Kumar, Abhishek and Rai, Piyush}, year={2021}, month={May}, pages={7185-7192} }
 ```
