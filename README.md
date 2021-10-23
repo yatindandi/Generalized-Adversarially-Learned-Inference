@@ -15,7 +15,7 @@ If you use the code, please cite the following paper:
 ## Instructions
 Install PyTorch from [this link](https://pytorch.org/). The CelebA/SVHN datasets will automatically be downloaded while running the scripts below. 
 
-For training:
+### For training:
 
 with modelname_train_dataset.py and the corresponding model.py in the same directory, run:
 
@@ -23,7 +23,7 @@ with modelname_train_dataset.py and the corresponding model.py in the same direc
 python3 modelname_train_dataset.py --dataset celeba/svhn --dataroot path_to_dataset --save_model_dir path_to_checkpoint_directory --save_image_dir path_to_gnerated_images_directory
 ```
 
-For evaluation:
+### For evaluation:
 
 test_recon_svhn.py and test_recon_celeba.py are used for calculating pixel and feature MSE for svhn and celeba datasets respectively whereas  test_recon_celeba_inpaint.py is used for the quantitative evaluation of the image-inpainting task. The command for evaluation scripts is as follows:
 
