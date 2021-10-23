@@ -13,6 +13,7 @@ If you use the code, please cite the following paper:
 ```
 
 ## Instructions
+Install PyTorch from [this link](https://pytorch.org/) and download the CelebA and SVHN datasets. 
 
 For training:
 
