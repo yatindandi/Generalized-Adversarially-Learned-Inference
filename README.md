@@ -13,7 +13,7 @@ If you use the code, please cite the following paper:
 ```
 
 ## Instructions
-Install PyTorch from [this link](https://pytorch.org/) and download the CelebA and SVHN datasets. 
+Install PyTorch from [this link](https://pytorch.org/). The CelebA/SVHN datasets will automatically be downloaded while running the scripts below. 
 
 For training:
 
